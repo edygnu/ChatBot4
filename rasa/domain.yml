@@ -1,0 +1,61 @@
+version: "3.1"
+
+intents:
+  - saludar
+  - despedirse
+  - afirmar
+  - negar
+  - estado_feliz
+  - estado_triste
+  - desafio_bot
+
+responses:
+  utter_saludar:
+    - text: "¡Hola! ¿Cómo estás?"
+
+  utter_alegrar:
+    - text: "No te olvides de seguirnos en nuestras redes sociales: <a href='https://www.facebook.com/biblioteca.ffyl.uncuyo/' target='_blank'>Facebook</a> <a href='https://www.instagram.com/biblioteca.ffyl.uncuyo/' target='_blank'>Instagram</a>"
+
+  utter_ayudo_eso:
+    - text: "¿Ya nos seguías en Facebook e Instagram?"
+
+  utter_feliz:
+    - text: "¿En qué te puedo ayudar?"
+
+  utter_despedirse:
+    - text: "Adiós"
+
+  utter_soy_un_bot:
+    - text: "Soy un bot, entrenado por la Biblioteca."
+
+  utter_seguinos:
+    - text: "¡Te invitamos a seguirnos en nuestras redes sociales para estar al tanto de todas las novedades!"
+
+  utter_cantidad_libros:
+    - text: "Podés retirar 6 libros a domicilio y 3 libros si son de consulta en la sala."
+
+  utter_dias_prestamo:
+    - text: "El préstamo a domicilio es por 7 días, el de sala de lectura es por el día."
+
+  utter_atraso_libro:
+    - text: "Se aplica suspensión de 5 días por cada día de atraso del material, y de 30 días cuando el libro es de consulta a sala."
+
+  utter_consultar_coleccion:
+    - text: "Podrás acceder a través del fichero catalográfico ubicado en Sala de Lectura y también al catálogo colectivo https://bibliotecas.uncuyo.edu.ar/"
+
+  utter_donacion_libros:
+    - text: "La Biblioteca recibe donaciones previa autorización de la Directora."
+  
+  utter_horarios_biblioteca:
+    - text: "La Biblioteca atiende de lunes a viernes. Estos son los horarios:\n- Préstamos: 8:00 a 13:00 y de 15:00 a 20:00\n- Hemeroteca: 8:00 a 13:00 y de 15:00 a 18:00 \n- Sala de Lectura: 8:00 a 20:00 \n- Procesos Técnicos: 8:00 a 20:45"
+
+  utter_ya_nos_seguias:
+    - text: "¡Gracias por seguirnos! ¿En qué más te puedo ayudar?"
+
+actions:
+  - action_informar_servicios
+  - action_informar_ubicacion
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

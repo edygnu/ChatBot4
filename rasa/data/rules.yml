@@ -1,0 +1,55 @@
+version: "3.1"
+
+rules:
+
+- rule: Decir adiós cuando el usuario se despida
+  steps:
+  - intent: despedirse
+  - action: utter_despedirse
+
+- rule: Decir 'Soy un bot' cuando el usuario desafíe al bot
+  steps:
+  - intent: desafio_bot
+  - action: utter_soy_un_bot
+
+- rule: Invitar a seguir en redes si responde no
+  steps:
+    - action: utter_ayudo_eso
+    - intent: negar
+    - action: utter_seguinos
+
+- rule: Responder cantidad de libros
+  steps:
+    - intent: cantidad_libros
+    - action: utter_cantidad_libros
+
+- rule: Responder días de préstamo
+  steps:
+    - intent: dias_prestamo
+    - action: utter_dias_prestamo
+
+- rule: Responder atraso libro
+  steps:
+    - intent: atraso_libro
+    - action: utter_atraso_libro
+
+- rule: Responder consulta de colecciones
+  steps:
+    - intent: consultar_coleccion
+    - action: utter_consultar_coleccion
+
+- rule: Responder donación de libros
+  steps:
+    - intent: donacion_libros
+    - action: utter_donacion_libros
+
+- rule: Responder horarios de la biblioteca
+  steps:
+    - intent: horarios_biblioteca
+    - action: utter_horarios_biblioteca
+
+- rule: Responder afirmación sobre seguir en redes
+  steps:
+    - action: utter_ayudo_eso
+    - intent: afirmar
+    - action: utter_ya_nos_seguias

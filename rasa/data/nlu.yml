@@ -1,0 +1,142 @@
+version: "3.1"
+
+nlu:
+- intent: saludar
+  examples: |
+    - hola
+    - buenos días
+    - buenas tardes
+    - buenas noches
+    - qué tal
+    - hola, ¿cómo estás?
+    - hola a todos
+    - hola, ¿qué tal?
+    - hey
+    - saludos
+
+- intent: despedirse
+  examples: |
+    - adiós
+    - hasta luego
+    - nos vemos
+    - chao
+    - cuídate
+    - que tengas un buen día
+    - hasta pronto
+    - me despido
+    - bye
+    - hasta la próxima
+
+- intent: afirmar
+  examples: |
+    - sí
+    - claro
+    - por supuesto
+    - correcto
+    - exacto
+    - eso es
+    - de acuerdo
+    - totalmente
+    - ya los seguía
+    - ya los sigo
+    - sí
+    - ok
+
+- intent: negar
+  examples: |
+    - no
+    - para nada
+    - en absoluto
+    - no creo
+    - no me gusta
+    - no es correcto
+    - nunca
+    - no estoy de acuerdo
+
+- intent: estado_feliz
+  examples: |
+    - estoy feliz
+    - me siento genial
+    - estoy muy contento
+    - todo va perfecto
+    - estoy de maravilla
+    - me siento increíble
+    - estoy muy bien
+    - estoy súper feliz
+    - estoy emocionado
+    - me siento excelente
+
+- intent: estado_triste
+  examples: |
+    - estoy triste
+    - me siento mal
+    - no estoy bien
+    - estoy decepcionado
+    - me siento muy mal
+    - estoy desanimado
+    - estoy deprimido
+    - no me siento bien
+    - estoy muy triste
+    - mi día fue horrible
+
+- intent: desafio_bot
+  examples: |
+    - ¿eres un bot?
+    - ¿eres humano?
+    - ¿estoy hablando con un bot?
+    - ¿eres real?
+    - ¿quién eres?
+    - ¿qué eres?
+    - ¿eres una máquina?
+    - ¿eres un asistente virtual?
+
+- intent: cantidad_libros
+  examples: |
+    - ¿Cuántos libros puedo retirar?
+    - ¿Cuántos libros me puedo llevar?
+    - ¿Cuántos libros puedo sacar?
+    - ¿Cuál es el límite de libros para retirar?
+
+- intent: dias_prestamo
+  examples: |
+    - ¿Por cuántos días es el préstamo?
+    - ¿Cuánto tiempo puedo tener un libro?
+    - ¿Cuántos días me prestan los libros?
+    - ¿Cuánto dura el préstamo?
+
+- intent: atraso_libro
+  examples: |
+    - ¿Qué pasa si no devuelvo el libro a tiempo?
+    - ¿Qué sucede si no renuevo el libro?
+    - ¿Qué pasa si me atraso con la devolución?
+    - ¿Qué pasa si no devuelvo o renuevo el libro en la fecha indicada?
+
+- intent: donacion_libros
+  examples: |
+    - ¿La Biblioteca recibe donaciones?
+    - ¿Puedo donar libros a la biblioteca?
+    - ¿Cómo dono un libro?
+    - Política de donación de libros
+
+- intent: consultar_coleccion
+  examples: |
+    - ¿Cómo puedo consultar las colecciones de la Biblioteca?
+    - ¿Dónde veo el catálogo de la biblioteca?
+    - ¿Cómo consulto el catálogo?
+    - ¿Cómo accedo a las colecciones?
+
+- intent: horarios_biblioteca
+  examples: |
+    - ¿Cúal es el horario de la Biblioteca?
+    - ¿Cuál es el horario de atención?
+    - ¿A qué hora abre la Biblioteca?
+    - ¿A qué hora cierra la Biblioteca?
+    - Horario sala de lectura
+    - Horario de atención al público
+    - Horario hemeroteca
+    - Horario préstamos
+    - ¿Hasta qué hora está abierta la Biblioteca?
+    - ¿Cuándo puedo ir a la Biblioteca?
+    - ¿Cuáles son los horarios de la Biblioteca?
+    - ¿Qué días está abierta la Biblioteca?
+    - ¿Hasta qué hora puedo devolver un libro?

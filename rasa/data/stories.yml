@@ -1,0 +1,29 @@
+version: "3.1"
+
+stories:
+
+- story: camino feliz
+  steps:
+  - intent: saludar
+  - action: utter_saludar
+  - intent: estado_feliz
+  - action: utter_feliz
+
+- story: camino triste 1
+  steps:
+    - intent: saludar
+    - action: utter_saludar
+    - action: utter_alegrar
+    - action: utter_ayudo_eso
+    - intent: afirmar
+    - action: utter_ya_nos_seguias
+
+- story: camino triste 2
+  steps:
+    - intent: saludar
+    - action: utter_saludar
+    - intent: estado_triste
+    - action: utter_alegrar
+    - action: utter_ayudo_eso
+    - intent: negar
+    - action: utter_seguinos
